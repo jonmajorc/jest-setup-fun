@@ -1,0 +1,27 @@
+{
+  "name": "jest-setup-fun",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^19.0.2"
+  },
+  "scripts": {
+    "test": "jest --coverage",
+    "test:watch":"jest --watch"
+  },
+  "jest":{
+    "testEnvironment":"jest-environment-node",
+    "collectCoverageFrom":[
+      "*.js"
+    ],
+    "coverageThreshold":{
+      "global":{
+        "statements":50,
+        "branches":50,
+        "functions":50,
+        "lines":100
+      }
+    }
+  }
+}
